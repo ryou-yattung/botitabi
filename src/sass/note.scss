@@ -1,0 +1,158 @@
+@import "_ress";
+
+
+.contain{
+    max-width: 480px;
+    width: 100vw;
+    max-height: 960px;
+    height: 100vh;
+    background-color: #F3EADA;
+    margin: 0 auto;
+    font-family: 'ヒラギノ丸ゴ ProN','sans-serif';
+    overflow: scroll;
+    color: #707070;
+
+    .head{// header
+        padding-top: 52px;
+        background-color: #FBAB7E;
+        max-width: 480px;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        &__title{
+            width: 100%;
+            padding: 11px 0;
+            font-size: 16px;
+            text-align: center;
+            position: relative;
+            color: #FCFCFC;
+            .arrow-left{
+                width: 20px;
+                height: 16px;
+                background-image: url(../img/icon-arrow-left.svg);
+               position: absolute;
+               top: 0;
+               bottom: 0;
+               left: 8px;
+               margin: auto 0;
+
+            }//.arrow-left
+        }//&__title
+    }// header
+
+    .main{
+        padding: 98px 0 137px;
+        .input-warp{
+           
+            label{
+                display: block;
+                margin-bottom: 16px;
+                margin-left: 22px;
+            }
+            input{
+                background-color: #fff;
+                display: inline-block;
+                height: 33px;
+                width: 253px;
+                font-size: 16px;
+                padding: 8px 16px;
+                border-radius: 33px;
+                margin-left: 52px;
+            }
+            &__item{
+                // padding: 0 22px;
+                margin-top: 32px;
+            }
+            .plan-label{
+                margin-top: 62px;
+            }
+            .plan-warp{
+                border: 2px solid #FBAB7E;
+                border-radius: 7px;
+                width: 100%;
+                height: 442px;
+                overflow: scroll;
+                .plan-btn{
+                    width: 128px;
+                    height: 32px;
+                    line-height: 32px;
+                    margin: 0 auto;
+                    border-radius: 32px;
+                    background-color: #FBAB7E;
+                    margin: 40px auto;
+                    color: #fff;
+                    text-align: center;
+                }
+                &__item{
+                    
+                    .inner-item{
+                        width: 85%;
+                        margin: 0 auto 20px;
+                        padding: 48px 0;
+                        background-color: #fff;
+                        border-radius: 19px;
+                        p{
+                            text-align: center;
+                        }
+                        label{
+                            margin-top: 28px;
+                        }
+                        input{
+                            background-color: #F3EADA;
+                            margin: 0 auto;
+                        }
+                        .file-input{
+                            display: none;
+                            width: 100px;
+                            background: #000;
+                        }
+                        .file-label{
+                            display: block;
+                            width: 78px;
+                            height: 78px;
+                            background: #D0CCCC url(../img/plas.svg) no-repeat center;
+                        }
+                    }
+                    
+                }
+            }
+            .days-warp{
+                input{
+                    display: inline-block;
+                    width: 60px;
+                    margin-right: 12px;
+                }
+                
+            }
+            button{
+                display: block;
+                width: 128px;
+                height: 32px;
+                line-height: 32px;
+                margin: 0 auto;
+                border-radius: 32px;
+                background-color: #FBAB7E;
+                margin: 40px auto;
+                color: #fff;
+            }
+            
+        }
+    }
+    
+    footer{
+        max-width: 480px;
+        width: 100%;
+        height: 97px;
+        background: linear-gradient(#FBB675, #FED65D);
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        
+        & > ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            line-height: 60px;
+        }
+    }
+}

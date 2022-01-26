@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/login04.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="box-2">
+            <h1 class="head">名前と性別を<br>設定する</h1>
+
+            <main class="main">
+                <form action="php/Registration03.php" method="POST" enctype="multipart/form-data">
+                    <label for="">名前</label>
+
+                <p>
+                    <input type="text" id="name" name="name" placeholder="山田太郎">
+                </p>
+
+                <label for="">性別</label>
+                <input type="hidden" id="sex" name="sex">
+
+                <p>
+                    <!-- <input type="text" id="password" name="password" value="半角英数の8文字以上で入力してください"> -->
+                    <ul class="gender">
+                        <li class="btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="38.897" height="48.616" viewBox="0 0 38.897 48.616">
+                                <g id="woman" transform="translate(-4.793 -1)">
+                                <path id="パス_68" data-name="パス 68" d="M42.9,32.385,32.15,15.2a3.472,3.472,0,0,0-3.906-1.476,13.768,13.768,0,0,1-7.987,0A3.472,3.472,0,0,0,16.333,15.2L5.586,32.385a5.209,5.209,0,0,0,4.549,7.969H38.366A5.209,5.209,0,0,0,42.9,32.385Z" transform="translate(0 9.26)" fill="#7dccfc"/>
+                                <circle id="楕円形_126" data-name="楕円形 126" cx="8.681" cy="8.681" r="8.681" transform="translate(15.569 1)" fill="#7dccfc"/>
+                                </g>
+                                </svg>
+                        </li>
+                          
+                        <li class="btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="38.897" height="48.616" viewBox="0 0 38.897 48.616">
+                                <g id="woman" transform="translate(-4.793 -1)">
+                                <path id="パス_68" data-name="パス 68" d="M42.9,32.385,32.15,15.2a3.472,3.472,0,0,0-3.906-1.476,13.768,13.768,0,0,1-7.987,0A3.472,3.472,0,0,0,16.333,15.2L5.586,32.385a5.209,5.209,0,0,0,4.549,7.969H38.366A5.209,5.209,0,0,0,42.9,32.385Z" transform="translate(0 9.26)" fill="#FC7DA4"/>
+                                <circle id="楕円形_126" data-name="楕円形 126" cx="8.681" cy="8.681" r="8.681" transform="translate(15.569 1)" fill="#FC7DA4"/>
+                                </g>
+                                </svg>
+                        </li>
+
+                        <li class="btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="38.897" height="48.616" viewBox="0 0 38.897 48.616">
+                                <g id="woman" transform="translate(-4.793 -1)">
+                                <path id="パス_68" data-name="パス 68" d="M42.9,32.385,32.15,15.2a3.472,3.472,0,0,0-3.906-1.476,13.768,13.768,0,0,1-7.987,0A3.472,3.472,0,0,0,16.333,15.2L5.586,32.385a5.209,5.209,0,0,0,4.549,7.969H38.366A5.209,5.209,0,0,0,42.9,32.385Z" transform="translate(0 9.26)" fill="#838383"/>
+                                <circle id="楕円形_126" data-name="楕円形 126" cx="8.681" cy="8.681" r="8.681" transform="translate(15.569 1)" fill="#838383"/>
+                                </g>
+                              </svg>
+                              
+                        </li>
+                    </ul>
+                </p>
+                <button class="btn1">
+                    <p>登録する</p>
+                </button>
+                
+                <a class="btn2" href="login03.html">
+                    <p>戻る</p>
+                </a>
+                </form>
+                
+            </main>
+            
+
+            <footer>
+
+                <ul class="maru">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </ul>
+                <p id="last">アカウントをすでにお持ちの方はこちら</p>
+            </footer>           
+        </div>
+   </div>
+
+<script>
+        let btn=document.getElementsByClassName("btn");
+        const sex = document.getElementById("sex");
+        let borderColor = [
+            "#7DCCFC",
+            "#FC7DA4",
+            "#838383"
+        ];
+        let sexItems = [
+            "男性",
+            "女性",
+            "その他"
+        ]
+        console.log(btn);
+        for(let i=0;i<=btn.length-1;i++){
+            btn[i].onclick=()=>{
+                for(let c=0;c<=btn.length-1;c++){
+                    btn[c] .style .border="";
+                }
+                btn[i] .style .border="3px solid " + borderColor[i];
+                sex.value = sexItems[i];
+                console.log(sex.value)
+            }
+        }
+
+        // for(let i=0;i<=btn.length-1;i++){
+        //     btn[0] .onclick=function(){
+        //     btn[0] .style .border="3px solid #7DCCFC",
+        //     btn[1] .style .border="none",
+        //     btn[2] .style .border="none";
+        //     }
+            
+        //     btn[1] .onclick=function(){
+        //     btn[1] .style .border="3px solid #FC7DA4",
+        //     btn[0] .style .border="none",
+        //     btn[2] .style .border="none";
+        //     }
+            
+
+        //     btn[2] .onclick=function(){
+        //     btn[2] .style .border="3px solid #838383",
+        //     btn[0] .style .border="none",
+        //     btn[1] .style .border="none";
+        //     }
+        // }
+
+    
+    
+</script>
+</body>
+</html>

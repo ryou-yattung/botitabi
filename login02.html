@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/login02.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="box-2">
+            <h1>メールアドレス<br>とパスワードを設定する</h1>
+
+            <main class="main">
+                <form class="main__registration" name="signUp" action="php/Registration01.php" method="POST" enctype="multipart/form-data">
+                    <div class="main__registration__inner-warp">
+                        <label for="">メールアドレス</label>
+
+                        <p>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                        </p>
+
+                        <label for="">パスワード</label>
+
+                        <p>
+                            <input type="password" id="password" name="password" placeholder="半角英数の8文字以上で入力してください">
+                        </p>
+                    </div>
+                    <button type="submit" class="btn1" href="login03.html">
+                        <p>次へ</p>
+                    </button>
+                    
+                    <a class="btn2" href="index.html">
+                        <p>戻る</p>
+                    </a>
+                </form>
+            </main>
+            
+            <footer>
+
+                <ul class="maru">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </ul>
+                <p id="last">アカウントをすでにお持ちの方はこちら</p>
+            </footer>           
+        </div>
+   </div>
+    
+</body>
+</html>

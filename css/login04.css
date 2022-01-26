@@ -1,0 +1,178 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  max-width: 480px;
+  width: 100vw;
+  max-height: 960px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3EADA;
+  margin: 0 auto;
+}
+
+.box-2 {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+h1 {
+  font-size: 18px;
+  color: #7B7979;
+  text-align: center;
+  margin: 20% auto 10%;
+}
+
+label {
+  font-size: 18px;
+  color: #707070;
+}
+
+label:before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  width: 11px;
+  height: 20px;
+  background-color: white;
+}
+
+form > p {
+  margin: 20px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background-color: #F3EADA;
+  border-bottom: 2px solid #EFEFEF;
+  color: #707070;
+}
+
+input[placeholder] {
+  color: #9f9f9f;
+  font-size: 12px;
+}
+
+.gender {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+
+.gender > li {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+  border-radius: 100%;
+  border: 3px solid #FFF;
+  background-color: white;
+}
+
+.gender > li > svg {
+  position: absolute;
+  top: 10%;
+  right: 15px;
+}
+
+.gender > li:nth-child(1):before {
+  content: "男性";
+  color: #7DCCFC;
+  position: absolute;
+  bottom: -25px;
+  right: 30%;
+}
+
+.gender > li:nth-child(2):before {
+  content: "女性";
+  color: #FC7DA4;
+  position: absolute;
+  bottom: -25px;
+  right: 30%;
+}
+
+.gender > li:nth-child(3):before {
+  content: "その他";
+  color: #838383;
+  position: absolute;
+  bottom: -25px;
+  right: 20%;
+}
+
+main {
+  margin-bottom: 24px;
+}
+
+.btn1 {
+  display: block;
+  width: 100%;
+  height: 55px;
+  background-color: white;
+  text-align: center;
+  margin: 10px auto;
+  line-height: 50px;
+  text-decoration: none;
+  border-radius: 50px;
+  border: white solid 2px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.btn1 > p {
+  font-size: 18px;
+  color: #838383;
+}
+
+.btn2 {
+  display: block;
+  width: 100%;
+  height: 55px;
+  background-color: #F3EADA;
+  text-align: center;
+  margin: 10px auto;
+  line-height: 50px;
+  text-decoration: none;
+  border-radius: 50px;
+  border: white solid 2px;
+}
+
+.btn2 > p {
+  font-size: 18px;
+  color: #838383;
+}
+
+.maru {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.maru > p {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 100px;
+  margin-right: 15px;
+}
+
+.maru > p:nth-child(3) {
+  background-color: #FBAB7E;
+}
+
+#last {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}

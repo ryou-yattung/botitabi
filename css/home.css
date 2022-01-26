@@ -1,0 +1,346 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.contain {
+  max-width: 480px;
+  width: 100vw;
+  max-height: 960px;
+  height: 100vh;
+  margin: 0 auto;
+  color: #7B7979;
+}
+
+.contain header {
+  max-width: 480px;
+  width: 100%;
+  height: 90px;
+  background-color: #FBAB7E;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  text-align: center;
+}
+
+.contain header .search {
+  position: absolute;
+  bottom: 8PX;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.contain header .search > p {
+  color: white;
+}
+
+.contain header .search > svg {
+  position: absolute;
+  left: 75px;
+  bottom: 9px;
+}
+
+.contain header .search > input {
+  border: none;
+  width: 250px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.contain main {
+  height: calc(100vh - 187px);
+  width: 100%;
+  position: relative;
+  background-color: #F3EADA;
+  z-index: 5;
+  padding: 90px 0 97px;
+}
+
+.contain main .main__inner01 {
+  height: 25px;
+  width: 100%;
+  border-bottom: 1px #707070 solid;
+  position: relative;
+}
+
+.contain main .main__inner01 > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style-type: none;
+  text-align: center;
+  height: 100%;
+}
+
+.contain main .main__inner01 > ul > li {
+  color: #838383;
+  height: 100%;
+  width: 110px;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.contain main .main__inner01 > ul > li a {
+  text-decoration: none;
+}
+
+.contain main .main__inner01 > ul > li a:link, .contain main .main__inner01 > ul > li a:visited {
+  color: #707070;
+}
+
+.contain main .main__inner02 {
+  height: 34px;
+  width: 100%;
+  position: relative;
+  overflow-x: scroll;
+  display: none;
+}
+
+.contain main .main__inner02 > ul {
+  list-style-type: none;
+  height: 100%;
+  width: 500px;
+  background-color: #FCFCFC;
+}
+
+.contain main .main__inner02 > ul > li {
+  display: inline-block;
+  color: #FFF;
+  font-size: 10px;
+  height: 18px;
+  padding: 0 20px;
+  margin: 0 5px;
+  line-height: 18px;
+  border-radius: 18px;
+  background-color: #FBAB7E;
+  transition: 1s;
+}
+
+.contain main .purpose {
+  max-width: 480px;
+  width: 100%;
+  height: 271px;
+  color: #000;
+  background-color: #F3EADA;
+  position: fixed;
+  bottom: -271px;
+  border-radius: 50px 50px 0 0;
+  z-index: 50;
+  transition: 0.8s;
+}
+
+.contain main .purpose h2 {
+  font-size: 16px;
+  margin-top: 26px;
+  margin-left: 38px;
+  color: #707070;
+}
+
+.contain main .purpose ul {
+  font-size: 12px;
+  color: #707070;
+  list-style-type: circle;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.contain main .purpose ul li {
+  margin-bottom: 3px;
+}
+
+.contain main .main__inner03 {
+  width: 100%;
+  height: 25px;
+}
+
+.contain main .main__inner03 select {
+  border: none;
+  background-color: #F3EADA;
+  color: #707070;
+  margin-left: 16px;
+}
+
+.contain main .plan {
+  height: calc(100vh - 246px);
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.contain main .plan__scroll {
+  width: 100%;
+}
+
+.contain main .plan__scroll .plan__background {
+  width: 100%;
+  height: 223px;
+  background-color: white;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.contain main .plan__scroll .plan__background .plan__icon {
+  width: 342px;
+  height: 43px;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.contain main .plan__scroll .plan__background .plan__icon > span {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #707070;
+}
+
+.contain main .plan__scroll .plan__background .plan__icon h2 {
+  font-size: 12px;
+  padding-left: 16px;
+}
+
+.contain main .plan__scroll .plan__background .plan__icon h2 > span {
+  font-size: 10px;
+  margin-left: 16px;
+}
+
+.contain main .plan__scroll .plan__background .plan__icon > svg {
+  position: absolute;
+  right: 0;
+}
+
+.contain main .plan__scroll .plan__background .plan__left {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
+.contain main .plan__scroll .plan__background .plan__left span {
+  display: block;
+  height: 142px;
+  width: 133px;
+  background: url(../img/image.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px auto;
+}
+
+.contain main .plan__scroll .plan__background .plan__right {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 126px;
+  margin-top: 20px;
+}
+
+.contain main .plan__scroll .plan__background .plan__right__inner01 {
+  width: 30px;
+  height: 100%;
+  position: relative;
+}
+
+.contain main .plan__scroll .plan__background .plan__right__inner01 ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.contain main .plan__scroll .plan__background .plan__right__inner01 ul::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 98%;
+  z-index: 10;
+  background-color: #606060;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.contain main .plan__scroll .plan__background .plan__right__inner01 ul li {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #606060;
+}
+
+.contain main .plan__scroll .plan__background .plan__right__inner01 ul li:first-child {
+  width: 6px;
+  height: 6px;
+}
+
+.contain main .plan__scroll .plan__background .plan__right__inner01 ul li:last-child {
+  width: 6px;
+  height: 6px;
+}
+
+.contain main .plan__scroll .plan__background .plan__right .text-box {
+  width: 60px;
+  height: 100%;
+  font-size: 10px;
+  position: relative;
+}
+
+.contain main .plan__scroll .plan__background .plan__right .text-box .first {
+  position: absolute;
+  top: 0;
+}
+
+.contain main .plan__scroll .plan__background .plan__right .text-box .last {
+  position: absolute;
+  bottom: 0;
+}
+
+.contain main .plan__scroll .plan__background .plan__right__inner02 {
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+}
+
+.contain main .plan__scroll .plan__background .plan__right__inner02 h3 {
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+
+.contain main .plan__scroll .plan__background .plan__right__inner02 > p {
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.contain footer {
+  max-width: 480px;
+  width: 100%;
+  height: 97px;
+  background: linear-gradient(#FBB675, #FED65D);
+  position: fixed;
+  bottom: 0;
+  z-index: 150;
+}
+
+.contain footer > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  line-height: 60px;
+}
+
+.line:before {
+  content: '';
+  width: 112px;
+  height: 3px;
+  display: block;
+  background-color: #FBAB7E;
+  position: absolute;
+  bottom: 0;
+}

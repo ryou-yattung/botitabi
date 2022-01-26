@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.box{
+    max-width: 480px;
+    width: 100vw;
+    max-height: 960px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F3EADA;
+    margin: 0 auto;
+    
+}
+
+.box-2{
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+h1{
+    font-size: 18px;
+    color: #7B7979;
+    text-align: center;
+    margin: 20% auto 10%;
+}
+
+label{
+    font-size: 18px;
+    color: #707070;
+}
+
+label:before{
+    content: '';
+        display: inline-block;
+        margin-right: 10px;
+        width: 11px;
+        height: 20px;
+        background-color: white; 
+}
+
+form > div > p{
+    margin: 20px;
+}
+
+select{
+    width: 100%;
+    border: none;
+    background-color: #F3EADA;
+    border-bottom: 2px solid #EFEFEF;
+    color: #707070;
+}
+
+.main{
+    &__inner{
+        &__box02{
+            margin-bottom: 100px;
+        }
+    }
+}
+
+
+footer{
+    width: 100%;
+    position: relative;
+}
+
+.btn1{
+    display: block;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    text-align: center;
+    margin: 10px auto;
+    line-height: 50px;
+    text-decoration: none;
+    border-radius: 50px;
+
+    & > p{
+        font-size: 18px;
+        color: #838383;
+    }
+}
+
+.btn2{
+    display: block;
+    width: 100%;
+    height: 55px;
+    background-color: #F3EADA;
+    text-align: center;
+    margin: 10px auto;
+    line-height: 50px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: white solid 2px;
+
+    & > p{
+        font-size: 18px;
+        color: #838383;
+    }
+}
+
+.maru{
+    margin-top: 80px;
+    text-align: center;
+
+    & > p{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 100px;
+        margin-right: 15px;
+
+        &:nth-child(2){
+            background-color:#FBAB7E;
+        }
+    }
+}
+
+#last{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}

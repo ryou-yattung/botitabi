@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+  <path id="icon-lock-open" d="M9,10H19a2,2,0,0,1,2,2v8a2,2,0,0,1-2,2H5a2,2,0,0,1-2-2V12a2.006,2.006,0,0,1,2-2H7V7A5,5,0,1,1,17,7a1,1,0,0,1-2,0A3,3,0,1,0,9,7ZM5,12v8H19V12Zm7,2a1,1,0,0,1,1,1v2a1,1,0,0,1-2,0V15A1,1,0,0,1,12,14Z" transform="translate(-3 -2)" fill="#fff"/>
+</svg>

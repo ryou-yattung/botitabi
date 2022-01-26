@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"> <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="">
+<meta name="description" content="ここに説明文を設定">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@twitteraccount">
+<meta property="og:site_name" content="サイト名">
+<meta property="og:title" content="サイトタイトル">
+<meta property="og:description" content="サイト説明文">
+<meta property="og:url" content="https://hoge.ecc.com/">
+<meta property="og:image" content="https://hoge.ecc.com/ogp.png">
+<meta property="og:type" content="website">
+<link rel="shortcut icon" href="http://www.hoge.hoge/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.png">
+<link rel="stylesheet" href="css/note.css">
+<title>note</title>
+</head>
+<body>    
+    <div class="contain">
+        <header class="head">
+            <h1 class="head__title">
+                <span>メモ<span>
+            </h1>
+        </header>
+        <main class="main">
+            <form class="input-warp" action="">
+                <div class="input-warp__item">
+                    <label for="">行先</label>
+                    <input type="text">
+                </div>
+                <div class="input-warp__item days-warp">
+                    <label for="">宿泊数</label>
+                    <p><input type="text">泊<input type="text">日</p>
+                </div>
+                <div class="input-warp__item">
+                    <label for="">金額</label>
+                    <input type="text">
+                </div>
+               
+                <label for="" class="plan-label">旅行メモ</label>
+                <div class="input-warp__item plan-warp">
+                    <div class="plan-warp__item" id="item-warp">
+                        <div class="inner-item">
+                            <label for="">行先</label>
+                            <p><input type="text"></p>
+                            <label>写真</label>
+                            <label for="file-input" class="file-label"><input type="file" class="file-input" id="file-input"></label>
+                            <label for="">ひとことメモ</label>
+                            <p><input type="text"></p>
+
+                        </div>
+                    </div>
+                    <p id="plan-plas-js" class="plan-btn">メモ追加</p>
+               </div>
+                <button type="submit" id="plan-plas-js">プランを投稿</button>
+            </form>
+        </main>
+        <footer class="foot">
+            <ul class="foot__nav">
+                <li class="foot__nav__icon contain__nav__iconL">
+                    <a href="home.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19.996" viewBox="0 0 20 19.996">
+                        <path id="icon-home" d="M13,20V15H11v5a2,2,0,0,1-2,2H6a2,2,0,0,1-2-2V12.41l-.3.3a1,1,0,1,1-1.4-1.42l9-9a1,1,0,0,1,1.4,0l9,9a1,1,0,0,1-1.4,1.42l-.3-.3V20a2,2,0,0,1-2,2H15a2,2,0,0,1-2-2Zm5,0V10.41l-6-6-6,6V20H9V15a2.006,2.006,0,0,1,2-2h2a2,2,0,0,1,2,2v5Z" transform="translate(-1.945 -2.004)" fill="#fcfcfc"/>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="foot__nav__icon contain__nav__iconC">
+                    <a href="plan.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path id="icon-edit" d="M6.3,12.307,16.31,2.3a1,1,0,0,1,1.4,0l4,4a1,1,0,0,1,0,1.4L11.707,17.711a1,1,0,0,1-.7.3H7a1,1,0,0,1-1-1v-4a1,1,0,0,1,.3-.7ZM8,16.01H10.6L19.6,7,17.011,4.412,8,13.418Zm10.007-2a1,1,0,1,1,2,0v6a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V6A2.007,2.007,0,0,1,4,4h6a1,1,0,0,1,0,2H4v14.01h14.01Z" transform="translate(-2 -2.014)" fill="#fcfcfc"/>
+                        </svg>
+                    </a>
+                </li>
+                
+                <li class="foot__nav__icon contain__nav__iconR">
+                    <a href="map.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21.324" viewBox="0 0 18 21.324">
+                        <path id="icon-location" d="M5.64,16.36a9,9,0,1,1,12.72,0l-5.65,5.66a1,1,0,0,1-1.42,0L5.64,16.36Zm11.31-1.41a7,7,0,1,0-9.9,0L12,19.9l4.95-4.95ZM12,14a4,4,0,1,1,4-4A4,4,0,0,1,12,14Zm0-2a2,2,0,1,0-2-2A2,2,0,0,0,12,12Z" transform="translate(-3 -0.992)" fill="#fcfcfc"/>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="foot__nav__icon contain__nav__iconR">
+                    <a href="profile.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+                        <path id="icon-user" d="M12,12a5,5,0,1,1,5-5A5,5,0,0,1,12,12Zm0-2A3,3,0,1,0,9,7,3,3,0,0,0,12,10Zm9,11a1,1,0,0,1-2,0V19a3,3,0,0,0-3-3H8a3,3,0,0,0-3,3v2a1,1,0,0,1-2,0V19a5,5,0,0,1,5-5h8a5,5,0,0,1,5,5Z" transform="translate(-3 -2)" fill="#fcfcfc"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+
+
+<script src="js/note.js"></script>
+</body>
+</html>

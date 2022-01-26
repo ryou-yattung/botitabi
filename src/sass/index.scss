@@ -1,0 +1,61 @@
+@import "_ress";
+
+.box{
+    max-width: 480px;
+    width: 100vw;
+    max-height: 960px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        to bottom,
+        #FBAB7E,
+        #FFD95C 60%
+    );
+}
+.animation-js{
+    transform: translateY(50px);
+    transition: 1s;
+    opacity: 0;
+}
+.box-2{
+    width: 80%;
+    position: relative;
+        h1{
+            text-align: center;
+            margin: 0 auto 98px;
+            img{
+                width: 42%;
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+
+
+        &__btn1{
+            width: 230px;
+            height: 45px;
+            border-radius: 20px;
+            background-color: white;
+            text-align: center;
+            line-height: 45px;
+            margin: 10px auto;
+            color:#FBAB7E;
+            
+        }
+
+        &__btn2{
+            width: 230px;
+            height: 45px;
+            border-radius: 20px;
+            background-color: #FED062;
+            text-align: center;
+            line-height: 45px;
+            margin: 10px auto;
+            border: white solid 2px;
+            color:white;
+        }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/login03.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="box-2">
+            <h1>住んでいる地域<br>を設定する</h1>
+
+            <main class="main">
+                <form class="main__inner__box01" action="php/Registration02.php" method="POST" enctype="multipart/form-data">
+                    <div class="main__inner01">
+                        <label for="">地方</label>
+                        <p>
+                            <select name="area" id="region">
+                                <option value="四国">四国</option>
+                                <option value="近畿">近畿</option>
+                                <option value="中国">中国</option>
+                            </select>
+                        </p>    
+                    </div>
+                    
+                    <div class="main__inner__box02">
+                        <label for="">都道府県</label>
+                        <p>
+                            <select name="rural" id="prefecture">
+                                <option value="大阪">大阪</option>
+                                <option value="京都">京都</option>
+                                <option value="奈良">奈良</option>
+                            </select>
+                        </p>                       
+                    </div> 
+                    <button type="submit" class="btn1">
+                        <p>次へ</p>
+                    </button>
+                    
+                    <a class="btn2" href="login02.html">
+                        <p>戻る</p>
+                    </a>
+                   
+                </form>
+           </main>    
+            
+            <footer>
+                <ul class="maru">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </ul>
+                <p id="last">アカウントをすでにお持ちの方はこちら</p>
+            </footer>
+        </div>
+   </div>
+    
+</body>
+</html>

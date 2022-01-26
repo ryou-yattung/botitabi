@@ -1,0 +1,308 @@
+@import "_ress";
+
+a{
+    text-decoration-line: none;
+}
+.contain{
+    max-width: 480px;
+    width: 100vw;
+    max-height: 960px;
+    height: 100vh;
+    margin: 0 auto;
+    color: #7B7979;
+    background-color: #F3EADA;
+    
+
+
+    //header
+    .head{
+        max-width: 480px;
+        width: 100%;
+        height: 90px;
+        background-color: #FBAB7E;
+        color: white;
+        position: fixed;
+        top: 0;
+        z-index: 200;
+        &__warp{
+            width: 100%;
+            position: absolute;
+            bottom: 8px;
+            font-size: 16px;
+            &__text{
+                text-align: center;
+            }
+        }
+    }
+
+
+
+    //main
+    .main{
+        // height: calc(100% - 197px);
+        background-color: #F3EADA;
+        padding: 90px 0 97px 0;
+        &__profile-warp{
+            padding: 8px 16px 0 24px;
+            font-size: 14px;
+            &__icon-warp{
+                    position: relative;
+                    margin: 0 0 16px 0;
+                    &__icon{
+                    width: 90px;
+                    height: 90px;
+                    background-color: #B9B9B9;
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                    }
+                    .edit-btn{
+                        display: inline-block;
+                        width: 60px;
+                        height: 26px;
+                        color: #FBAB7E;
+                        border: solid #FBAB7E 1px;
+                        border-radius: 26px;
+                        line-height: 26px;
+                        text-align: center;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+            }
+            &__name-warp{
+                margin: 0 0 8px 0;
+                font-size: 16px;
+            }
+            &__rural-text{
+                margin: 0 0 24px 0;
+                &__text{
+                    &::before{
+                        content: "";
+                        display: inline-block;
+                        width: 13px;
+                        height: 15px;
+                        background-image: url(../img/icon-location-gray.svg);
+                        background-position: center;
+                        background-size: contain;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            &__profile-text{
+                margin: 0 0 24px 0;
+                font-size: 16px;
+            }
+        }//profile-warp
+
+        &__post-warp{
+            &__title-warp{
+                width: 100%;
+                display: flex;
+                position: relative;
+                &__title{
+                    width: 50%;
+                    text-align: center;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+                .bottom-line{
+                    width: 50%;
+                    height: 2px;
+                    background-color: #FBAB7E;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transition: all 0.3s ease-out;
+                }
+            }//title-warp
+            &__table{
+                &__plan-items{
+                    &__item{
+                        padding: 24px;
+                        background-color: #fff;
+                        margin-bottom: 20px;
+                        &__title{
+                            display: flex;
+                            font-weight: normal; 
+                            position: relative;
+                            &__icon{
+                                width: 36px;
+                                height: 36px;
+                                margin-right: 16px;
+                                background-color: #707070;
+                                border-radius: 50%;
+                            }
+                            &__text-box{
+                                &__purpose{
+                                    background-color: #F3EADA;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    position: relative;
+                                    height: 29px;
+                                    &::before{
+                                        content: "";
+                                        display: inline-block;
+                                        width: 6px;
+                                        height: 100%;
+                                        background-color: #FBAB7E;
+                                        margin-right: 4px;
+                                    }
+                                    
+                                    .destination{
+                                        font-size: 18px;
+                                        padding-right: 8px;
+                                    }
+                                    .day,.tour{
+                                        font-size: 12px;
+                                        padding-bottom: 1px;
+                                        padding-right: 8px;
+                                    }
+                                }
+                                &__name-box{
+                                    font-size: 10px;
+                                    margin-bottom: 16px;
+                                }
+
+                            } 
+                            &__clip-box{
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                            }
+                            
+                        }//title
+                        &__contents{
+                            display: flex;
+                            &__img{
+                                width: 40%;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            &__flow{
+                                width: 25%;
+                                height: 100%;
+                                // background-color: red;
+                                display: flex;
+                                
+                                ul{
+                                    padding: 4px 0;
+                                    width: 9px;
+                                    height: 160px;
+                                    list-style: none;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    flex-direction : column;
+                                    position: relative;
+                                    margin-left: 24px;
+                                    &::before{
+                                        content: "";
+                                        display: inline-block;
+                                        width: 1px;
+                                        height: 90%;
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        right: 0;
+                                        z-index: 1;
+                                        margin: auto;
+                                        background-color:  #707070;
+                                    }
+                                    
+                                    li{
+                                        background-color: #fff;
+                                        width: 5px;
+                                        height: 5px;
+                                        border: 1px solid #707070;
+                                        border-radius: 50%;
+                                        position: relative;
+                                        z-index: 10;
+                                        &:first-child{
+                                            width: 9px;
+                                            height: 9px;
+                                            background-color:  #707070;
+                                        }
+                                        &:last-child{
+                                            width: 9px;
+                                            height: 9px;
+                                            background-color:  #707070;
+                                        }
+                                    }
+                                }
+                                &__text-box{
+                                    padding-left: 4px;
+                                    width: calc(100% - 9px);
+                                    height: 160px;
+                                    position: relative;
+                                    p{
+                                        position: absolute;
+                                        font-size: 10px;
+                                    }
+                                    .first{ 
+                                        top: 0;
+                                    }
+                                    .last{ 
+                                        bottom: 0;
+                                    }
+                                }
+                            }
+                            &__text{
+                                width: 35%;
+                                label{
+                                    font-size: 10px;
+                                }
+                                p{
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }//__item
+                }
+                .clip{
+                    display: none;
+                }
+            }
+        }//post-warp
+
+    }
+
+
+    //footer
+    .foot{
+        max-width: 480px;
+        width: 100%;
+        height: 97px;
+        background: linear-gradient(#FBB675, #FED65D);
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        
+        & > ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            line-height: 60px;
+        }
+    }
+}
+
+
+
+
+//inner01.line
+.line:before{
+    content: '';
+    width: 112px;
+    height: 3px;
+    display: block;
+    background-color: #FBAB7E;
+    position: absolute;
+    bottom: 0;
+}

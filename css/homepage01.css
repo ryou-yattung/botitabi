@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  max-width: 480px;
+  width: 100vw;
+  max-height: 960px;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: #FBAB7E;
+}
+
+header > .search {
+  text-align: center;
+  line-height: 130px;
+}
+
+header > .search > input {
+  width: 249px;
+  height: 28px;
+  border-radius: 20px;
+  border: none;
+  color: #707070;
+  position: relative;
+}

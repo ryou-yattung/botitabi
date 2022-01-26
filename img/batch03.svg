@@ -1,0 +1,35 @@
+<svg id="グループ_124" data-name="グループ 124" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.79" height="23.682" viewBox="0 0 22.79 23.682">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_72" data-name="長方形 72" width="22.79" height="23.682" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="長方形_69" data-name="長方形 69" width="11.302" height="9.966" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="長方形_70" data-name="長方形 70" width="9.983" height="10.017" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_123" data-name="グループ 123" clip-path="url(#clip-path)">
+    <g id="グループ_122" data-name="グループ 122" transform="translate(0 0)">
+      <g id="グループ_121" data-name="グループ 121" clip-path="url(#clip-path)">
+        <path id="パス_20" data-name="パス 20" d="M2.591,9.05v3.363a2,2,0,0,0,2,2,2,2,0,0,1,2,2v8.266a2,2,0,0,0,2,2H21.89a2,2,0,0,0,2-2V9.05a2,2,0,0,0-2-2H4.587a2,2,0,0,0-2,2" transform="translate(-1.097 -2.986)" fill="#1d3b1d"/>
+        <path id="パス_21" data-name="パス 21" d="M0,6.257V9.62a2,2,0,0,0,2,2,2,2,0,0,1,2,2v8.266a2,2,0,0,0,2,2H19.3a2,2,0,0,0,2-2V6.257a2,2,0,0,0-2-2H2a2,2,0,0,0-2,2" transform="translate(0 -1.804)" fill="#399d26"/>
+        <g id="グループ_117" data-name="グループ 117" transform="translate(0.84 0)" opacity="0.64">
+          <g id="グループ_116" data-name="グループ 116" transform="translate(0 0)">
+            <g id="グループ_115" data-name="グループ 115" clip-path="url(#clip-path-3)">
+              <path id="パス_22" data-name="パス 22" d="M3.646,9.966,1.457,9.594,11.011,0l1.748,1.742Z" transform="translate(-1.457 0)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+        <g id="グループ_120" data-name="グループ 120" transform="translate(3.319 1.957)" opacity="0.64">
+          <g id="グループ_119" data-name="グループ 119">
+            <g id="グループ_118" data-name="グループ 118" clip-path="url(#clip-path-4)">
+              <path id="パス_23" data-name="パス 23" d="M6.185,13.411l-.43-.422,9.554-9.594.43.422Z" transform="translate(-5.756 -3.394)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

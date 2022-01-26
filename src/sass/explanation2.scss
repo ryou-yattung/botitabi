@@ -1,0 +1,149 @@
+@import "_ress";
+// body{
+//     max-width: 480px;
+//     width: 100vw;
+//     max-height: 960px;
+//     height: 100vw;
+//     background-color: #F3EADA;
+//     color: #7B7979;
+// }
+// *{
+//     margin: 0;
+//     padding: 0;
+// }
+
+.contain{    
+    padding: 52px;
+    text-align: center;
+    // position: relative;
+    max-width: 480px;
+    width: 100vw;
+    max-height: 960px;
+    height: 100vh;
+    margin:  0 auto;
+    background-color: #F3EADA;
+    color: #7B7979;
+
+
+    h1{
+        display: inline-block;
+        width: auto;
+        font-size: 20px;
+        position: relative;
+        padding-bottom: 24px;
+
+       
+    }
+
+    &__h2{
+        display: inline-block;
+        font-size: 30px;
+        text-align: center;
+        align-items: center;
+        width: 272px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        &__text{
+            font-size: 14px;
+        }
+    }
+
+    p{
+        display: inline-block;
+        font-size: 10px;
+        line-height: 17px;
+        width: 272px;
+        text-align: center;
+        align-items: center;
+    }
+
+    &__img{
+        width: 272px;
+        height: 360px;
+        // background-color: #D0CCCC;
+        border-radius: 18px;
+        margin: 0 auto;
+        position: relative;
+        background-image: url(../img/explanation2.svg);
+        background-repeat: no-repeat;
+        
+        &__arrow-R{
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            display: block;
+            border-radius: 50%;
+            background-color: white;
+            &__svg{
+                position: absolute;
+                right: 10px;
+                top: 30%;
+                
+            }
+        
+        }
+        &__arrow-L{
+            position: relative;
+            background-color: white;
+            z-index: 1;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: block;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -20px;
+            &__svg{
+                position: absolute;
+                left: 10px;
+                top: 30%;
+            }
+            
+        }
+    }
+
+
+
+    &__btn-box{
+        margin: 30px auto;
+        list-style-type: none;
+        width: 115px;
+        height: 1px;
+        // background-color: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            div{
+                border-radius: 50%;
+                border: 1px;
+                z-index: 1;
+            }
+        }
+    }
+
+    &__btn-box{
+            &__btn{
+                &__all{
+                    // ３つのボタンの色
+                    width: 10px;
+                    height: 10px;
+                    background-color: rgb(204, 204, 204);
+            }
+
+        }
+
+        &__btn1{
+            &__inner{
+                // 左のボタンの色
+                background-color: #FBAB7E;
+                width: 13px;
+                height: 13px;
+            }
+        }
+
+    }
+}

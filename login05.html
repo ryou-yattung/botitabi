@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/login05.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="box-2">
+            <h1>
+                <img src="img/logo.svg" alt="">
+            </h1>
+
+           <form action="php/login.php" method="POST" enctype="multipart/form-data">
+                <div class="box-2__btn1">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+                            <path id="icon-user" d="M12,12a5,5,0,1,1,5-5A5,5,0,0,1,12,12Zm0-2A3,3,0,1,0,9,7,3,3,0,0,0,12,10Zm9,11a1,1,0,0,1-2,0V19a3,3,0,0,0-3-3H8a3,3,0,0,0-3,3v2a1,1,0,0,1-2,0V19a5,5,0,0,1,5-5h8a5,5,0,0,1,5,5Z" transform="translate(-3 -2)" fill="#fff"/>
+                          </svg>
+                          <input type="text" value="kida.takuya@gmail.com" name="email" placeholder="Example@gmail.jp">
+                    </p>
+                </div>
+            
+
+           
+                <div class="box-2__btn2">
+                    <p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+                        <path id="icon-lock-open" d="M9,10H19a2,2,0,0,1,2,2v8a2,2,0,0,1-2,2H5a2,2,0,0,1-2-2V12a2.006,2.006,0,0,1,2-2H7V7A5,5,0,1,1,17,7a1,1,0,0,1-2,0A3,3,0,1,0,9,7ZM5,12v8H19V12Zm7,2a1,1,0,0,1,1,1v2a1,1,0,0,1-2,0V15A1,1,0,0,1,12,14Z" transform="translate(-3 -2)" fill="#fff"/>
+                      </svg>
+                      <input type="password" value="kidatakuya" name="password" placeholder="・・・・・・・・・">
+                    </p>
+                </div>
+            
+            
+           
+                <button class="box-2__btn3" type="submit">
+                    <p>ログイン</p>
+                </button>
+                       
+              </form>
+       </div>       
+    </div>
+    
+</body>
+</html>

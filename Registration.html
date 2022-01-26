@@ -1,0 +1,105 @@
+<!-- <?php
+
+// session_start();
+// require ('connect.php');
+// $statement = $db->prepare('INSERT INTO members SET name=?, address=?,password=?,created_at=NOW()');
+// $statement->execute(array(
+//   $_SESSION['join']['name'],
+//   $_SESSION['join']['address'],
+//   sha1($_SESSION['join']['password'])
+// ));
+//   unset($_SESSION['join']);
+//   header('Location: home.html');
+//   exit();
+
+
+?> -->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Nomimatti-start</title>
+  </head>
+  <body>
+    <!-- 全体 -->
+    <div class="box">
+      <div class="wrap" id="widow">
+        <!-- start -->
+        <section class="wrap__firstbox">
+          <div class="wrap__firstbox__innerwrap">
+            <div class="wrap__firstbox__innerwrap__logo"></div>
+            <p class="wrap__firstbox__innerwrap__text">
+              このサービスは、飲み仲間を探し、実際の会うまでの流れを作るものです。
+            </p>
+            <button class="wrap__firstbox__innerwrap__loginbtn" id="loginbtn">
+              ログイン
+            </button>
+            <button class="wrap__firstbox__innerwrap__signupbtn" id="signupbtn">
+              アカウント作成
+            </button>
+          </div>
+        </section>
+
+        <!-- login -->
+        <section class="wrap__login">
+          <header class="wrap__login__head">
+            <div class="return"></div>
+            <h1><img src="img/logo-notext.svg" alt="" /></h1>
+          </header>
+          <form class="wrap__login__innerwrap" action="" name="login" method="POST">
+            <h2>ログイン</h2>
+            <div class="wrap__login__innerwrap__register-group">
+              <label for="name">名前</label>
+              <input type="text" name="name" placeholder="木田匠哉" class="name"/>
+              <label for="address">携帯番号またはメールアドレス</label>
+              <input 
+                class="loginAddress"
+                type="text"
+                name="address"
+                placeholder="nomimatti@gmail.com"
+              />
+              <label for="password">パスワード</label>
+              <input type="password" name="password" placeholder="パスワード設定" class="pass" />
+            </div>
+            <button class="wrap__login__innerwrap__loginbtn">
+              ログイン
+            </button>
+          </form>
+        </section>
+
+        <!-- sign up -->
+        <section class="wrap__login">
+          <header class="wrap__login__head">
+            <div class="return"></div>
+            <h1><img src="img/logo-notext.svg" alt="" /></h1>
+          </header>
+          <form class="wrap__login__innerwrap" name="signUp" action="" method="POST">
+            <h2>アカウント登録</h2>
+            <div class="wrap__login__innerwrap__register-group">
+              <label for="name">名前</label>
+              <input type="text" name="name" placeholder="木田匠哉" class="name" />
+              <label for="address">携帯番号またはメールアドレス</label>
+              <input
+                class="address"
+                type="text"
+                name="address"
+                placeholder="nomimatti@gmail.com"
+              />
+              <label for="password">パスワード</label>
+              <input type="password" name="password" placeholder="半角英数5文字以上" class="pass" />
+              <label for="password">パスワード確認</label>
+              <input type="password" name="pass" placeholder="パスワード確認" id="passConfirmation" />
+            </div>
+            <button name="sigebtn" class="wrap__login__innerwrap__loginbtn">
+              アカウント登録
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
